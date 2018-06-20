@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
-  <groupId>org.bitcoin</groupId>
+  <groupId>coop.rchain</groupId>
   <artifactId>secp256k1-java</artifactId>
   <version>0.1-SNAPSHOT</version>
   <packaging>jar</packaging>
@@ -67,9 +67,9 @@
         <artifactId>maven-dependency-plugin</artifactId>
         <configuration>
           <usedDependencies>
-            <usedDependency>org.bitcoin:secp256k1-native-linux-x86_64</usedDependency>
-            <usedDependency>org.bitcoin:secp256k1-native-windows-x86_64</usedDependency>
-            <usedDependency>org.bitcoin:secp256k1-native-osx-x86_64</usedDependency>
+            <usedDependency>coop.rchain:secp256k1-native-linux-x86_64</usedDependency>
+            <usedDependency>coop.rchain:secp256k1-native-windows-x86_64</usedDependency>
+            <usedDependency>coop.rchain:secp256k1-native-osx-x86_64</usedDependency>
           </usedDependencies>
         </configuration>
       </plugin>
@@ -105,9 +105,9 @@
             <configuration>
               <artifactSet>
                 <includes>
-                  <include>org.bitcoin:secp256k1-native-linux-x86_64</include>
-                  <include>org.bitcoin:secp256k1-native-windows-x86_64</include>
-                  <include>org.bitcoin:secp256k1-native-osx-x86_64</include>
+                  <include>coop.rchain:secp256k1-native-linux-x86_64</include>
+                  <include>coop.rchain:secp256k1-native-windows-x86_64</include>
+                  <include>coop.rchain:secp256k1-native-osx-x86_64</include>
                 </includes>
               </artifactSet>
             </configuration>
