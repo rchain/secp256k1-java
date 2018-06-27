@@ -27,6 +27,18 @@
   <maven.compiler.target>1.8</maven.compiler.target>
   <maven.compiler.source>1.8</maven.compiler.source>
   </properties>
+  <repositories>
+    <repository>
+      <id>oss.sonatype.org-snapshot</id>
+      <url>http://oss.sonatype.org/content/repositories/snapshots</url>
+      <releases>
+        <enabled>false</enabled>
+      </releases>
+      <snapshots>
+        <enabled>true</enabled>
+      </snapshots>
+    </repository>
+  </repositories>
   <dependencies>
   <dependency>
       <groupId>com.google.guava</groupId>
@@ -40,23 +52,23 @@
       </exclusions>
   </dependency>
     <dependency>
-      <groupId>org.bitcoin</groupId>
+      <groupId>coop.rchain</groupId>
       <artifactId>secp256k1-native-linux-x86_64</artifactId>
       <version>0.1-SNAPSHOT</version>
       <optional>true</optional>
     </dependency>
     <dependency>
-      <groupId>org.bitcoin</groupId>
+      <groupId>coop.rchain</groupId>
       <artifactId>secp256k1-native-windows-x86_64</artifactId>
       <version>0.1-SNAPSHOT</version>
       <optional>true</optional>
     </dependency>
-    <!--<dependency>-->
-      <!--<groupId>org.bitcoin</groupId>-->
-      <!--<artifactId>secp256k1-native-osx-x86_64</artifactId>-->
-      <!--<version>0.1-SNAPSHOT</version>-->
-      <!--<optional>true</optional>-->
-    <!--</dependency>-->
+    <dependency>
+      <groupId>coop.rchain</groupId>
+      <artifactId>secp256k1-native-osx-x86_64</artifactId>
+      <version>0.1-SNAPSHOT</version>
+      <optional>true</optional>
+    </dependency>
   </dependencies>
   <build>
     <plugins>
