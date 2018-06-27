@@ -57,11 +57,11 @@ public class Secp256k1Context {
 
       try {
           if (arch64 && linux) {
-              libToLoad = extract("org/bitcoin/secp256k1-native-linux-x86_64.so");
+              libToLoad = extract("coop/rchain/secp256k1-native-linux-x86_64.so");
           } else if (arch64 && osx) {
-              libToLoad = extract("org/bitcoin/secp256k1-native-osx-x86_64.dylib");
+              libToLoad = extract("coop/rchain/secp256k1-native-osx-x86_64.dylib");
           } else if (arch64 && windows) {
-              libToLoad = extract("org/bitcoin/secp256k1-native-windows-x86_64.dll");
+              libToLoad = extract("coop/rchain/secp256k1-native-windows-x86_64.dll");
           } else {
               throw new RuntimeException("No secp256k1-native library to extract");
           }
