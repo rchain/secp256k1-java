@@ -59,12 +59,6 @@
     </dependency>
     <dependency>
       <groupId>coop.rchain</groupId>
-      <artifactId>secp256k1-native-windows-x86_64</artifactId>
-      <version>0.1-SNAPSHOT</version>
-      <optional>true</optional>
-    </dependency>
-    <dependency>
-      <groupId>coop.rchain</groupId>
       <artifactId>secp256k1-native-osx-x86_64</artifactId>
       <version>0.1-SNAPSHOT</version>
       <optional>true</optional>
@@ -97,7 +91,6 @@
         <configuration>
           <usedDependencies>
             <usedDependency>coop.rchain:secp256k1-native-linux-x86_64</usedDependency>
-            <usedDependency>coop.rchain:secp256k1-native-windows-x86_64</usedDependency>
             <usedDependency>coop.rchain:secp256k1-native-osx-x86_64</usedDependency>
           </usedDependencies>
         </configuration>
@@ -135,7 +128,6 @@
               <artifactSet>
                 <includes>
                   <include>coop.rchain:secp256k1-native-linux-x86_64</include>
-                  <include>coop.rchain:secp256k1-native-windows-x86_64</include>
                   <include>coop.rchain:secp256k1-native-osx-x86_64</include>
                 </includes>
               </artifactSet>
